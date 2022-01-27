@@ -1,21 +1,23 @@
 import React, {useEffect, useState, useCallback} from 'react'
 import ScoreBoard from './components/ScoreBoard'
-import blueCandy from './images/blue-candy.png'
-import greenCandy from './images/green-candy.png'
-import orangeCandy from './images/orange-candy.png'
-import purpleCandy from './images/purple-candy.png'
-import redCandy from './images/red-candy.png'
-import yellowCandy from './images/yellow-candy.png'
+import LongRun from './images/LongRun.jpg'
+import desperado from './images/Desperado.jpg'
+import oneofthesenights from './images/OneOfTheseNights.jpg'
+import Hotel from './images/HotelCalifornia.jpg'
+import GreatestHits1 from './images/GreatestHits1.jpg'
+import GreatestHits2 from './images/GreatestHits2.jpg'
 import blank from './images/blank.png'
 
+
+let score = 0
 const width = 8
 const candyColors = [
-    blueCandy,
-    orangeCandy,
-    purpleCandy,
-    redCandy,
-    yellowCandy,
-    greenCandy
+    LongRun,
+    desperado,
+    oneofthesenights,
+    Hotel,
+    GreatestHits1,
+    GreatestHits2
 ]
 
 const App = () => {
