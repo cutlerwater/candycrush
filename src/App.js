@@ -9,7 +9,7 @@ import GreatestHits2 from './images/GreatestHits2.jpg'
 import blank from './images/blank.png'
 
 
-let score = 0
+
 const width = 8
 const candyColors = [
     LongRun,
