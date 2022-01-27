@@ -1,5 +1,4 @@
-import {useEffect, useState} from 'react'
-import { useCallback } from 'react'
+import React, {useEffect, useState, useCallback} from 'react'
 import ScoreBoard from './components/ScoreBoard'
 import blueCandy from './images/blue-candy.png'
 import greenCandy from './images/green-candy.png'
@@ -37,7 +36,7 @@ const App = () => {
                 return true
             }
         }
-    })
+    }, [currentColorArrangement],)
 
     const checkForRowOfFour = useCallback(() => {
         for (let i = 0; i < 64; i++) {
@@ -54,7 +53,7 @@ const App = () => {
                 return true
             }
         }
-    })
+      }, [currentColorArrangement],)
 
     const checkForColumnOfThree = useCallback(() => {
         for (let i = 0; i <= 47; i++) {
@@ -68,7 +67,7 @@ const App = () => {
                 return true
             }
         }
-    })
+      }, [currentColorArrangement],)
 
     const checkForRowOfThree = useCallback(() => {
         for (let i = 0; i < 64; i++) {
@@ -85,7 +84,7 @@ const App = () => {
                 return true
             }
         }
-    })
+      }, [currentColorArrangement],)
 
     const moveIntoSquareBelow = useCallback(() => {
         for (let i = 0; i <= 55; i++) {
@@ -102,7 +101,7 @@ const App = () => {
                 currentColorArrangement[i] = blank
             }
         }
-    })
+      }, [currentColorArrangement],)
 
     const dragStart = (e) => {
         setSquareBeingDragged(e.target)
