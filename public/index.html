@@ -15,6 +15,8 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,9 +25,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Candy Crush Game</title>
   </head>
   <body>
+    <h1>Cutlerwater Version of Candy Crush</h1>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -36,5 +39,44 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>Created with <i class="fa fa-heart"></i> by
+          <a target="_blank" href="https://cutlerwater-newportfolio.netlify.app/">Cutlerwater</a></p>
+        <button class="close-btn"><i class="fa fa-times"></i></button>
+        <h4>Get in touch on</h4>
+        <ul>
+          <li>
+            <a href="https://cutlerwater-newportfolio.netlify.app/" target="_blank">
+              <i class='fa fa-skyatlas'></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/garrett-cutler-20b52311/" target="_blank">
+              <i class='fa fa-linkedin-square'></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/cutlerwater" target="_blank">
+              <i class='fa fa-facebook-square'></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/garrett-cutler-20b52311/" target="_blank">
+              <i class='fa fa-github-square'></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://studio.youtube.com/channel/UCaQLwbwbdZbadVkodFAhBiA/videos" target="_blank">
+              <i class='fa fa-youtube-square'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">
+      Get in Touch
+    </button>
+      <script src="./app2.js"></script>
   </body>
 </html>
