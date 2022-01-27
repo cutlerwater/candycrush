@@ -15,6 +15,39 @@
   height: 70px;
 }
 
+h1 {
+	font-size: 50px;
+	margin: 0;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.change-btn {
+	background-color: #000;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 18px;
+	padding: 20px 50px;
+}
+
+.change-btn:active {
+	transform: scale(0.98);
+}
+
+.change-btn:focus {
+	outline: none;
+}
+
+.color-text {
+	font-size: 14px;
+}
+
  /* SOCIAL PANEL CSS */
  .social-panel-container {
 	position: fixed;
